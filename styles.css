@@ -581,6 +581,10 @@ header p{
     .container{
         width: 100vw;
     }
+
+    .nav-brand{
+        padding: 10vw;
+    }
     header{
         padding-top: 147px;
         height: 100vh;
@@ -630,7 +634,7 @@ header p{
     .section-services{
         background-color: #70bfff;
         height: 100vh;
-        max-height: 120vh;
+
     }
     
     .services-container{
@@ -764,4 +768,297 @@ header p{
         text-align: center;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100vw;
+        font-size: 80%;
+    }
+
+    .nav-brand{
+        font-size: 40px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header{
+        padding-top: 147px;
+        height: 100vh;
+        background: #f9f8fb url('imgs/headerbg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .burger{
+        position: absolute;
+        top: 3vh;
+        left: 80%;
+        z-index: 50;
+    }
+    .bar{
+        display: block;
+        width: 40px;
+        height: 4px;
+        top: 20%;
+        background-color: black;
+        z-index: 1000;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
+    .open .bar1{
+        transform: rotate(45deg) translate(3px, 10px)
+    }
+    .open .bar2{
+        opacity: 0;
+    }
+    .open .bar3{
+        transform: rotate(-45deg) translate(2px,-10px)
+    }
+
+    .nav-container{
+        flex-direction: column;
+    }
+    .openNav{
+        display: block !important;
+        transition: 0.5s
+    }
+    .nav-items{
+        margin-top: 60px;
+        position: absolute;
+        display: none;
+        font-size: 30px;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+        transition: 0.5s
+
+    }
+    .nav-items li{
+        margin-bottom: 20px;
+    }
+
+    .nav-items li:hover ::before{
+        margin: 0 auto;
+        width: 20%;
+    }
+    
+    header p{
+        width: 50vw;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    .scroll{
+        display: none;
+    }
+    .section-about{
+        background: #00b1b1;
+        height: 100vh;
+        
+    }
+
+
+    .about-container .text{
+        padding-bottom: 10vh;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-container .text h2{
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+    .about-container .text p{
+        line-height: 150%;
+    }
+
+    .section-services{
+        height: 150vh;
+    }
+
+    .section-services h2{
+        font-size: 60px;
+    }
+    
+    .services-container .label{
+        width: 90vw;
+        height: 15vh;
+    }
+
+
+
+    .section-gallery{
+        height: 180vh;
+    }
+    
+    .gallery-container{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-container .galleryDesc{
+        width: 80vw;
+        line-height: 150%;
+    }
+    .gallery-container .galleryDesc h2{
+        font-size: 60px;
+    }
+
+    .pictures-grid{
+        grid-row-gap: 5px;
+    }
+    .pic-1{
+        grid-column: 1/13;
+        grid-row: 1;
+        width: 80vw;
+        height: 20vh;
+    }
+    .pic-2{
+        grid-column: 1/13;
+        grid-row: 2;
+        width: 80vw;
+        height: 20vh;
+    }
+    .pic-3{
+        grid-column: 1/13;
+        grid-row: 3;
+        width: 80vw;
+        height: 20vh;
+    }
+    .pic-4{
+        grid-column: 1/13;
+        grid-row: 4;
+        width: 80vw;
+        height: 20vh;
+    }
+    .pic-5{
+        grid-column: 1/13;
+        grid-row: 5;
+        width: 80vw;
+        height: 20vh;
+    }
+
+
+
+    .section-subscribe{
+        background-size: 250%;
+        background-position: center top;
+        height: 70vh;
+    }
+    
+    .subscribe-container{
+        padding: 5vw;
+    }
+    .subscribe-container p{
+        width: 70vw;
+        margin-bottom: 30px;
+    }
+    .subscribe-container input{
+        width: 50vw;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+
+    .section-blog{
+        height: 200vh;
+    }
+
+    .blog-container h2{
+        font-size: 60px;
+        margin-bottom: 3vh;
+    }
+    .blog-container p{
+        width: 60vw;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+    
+    .blog-container .row{
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .blogCard{
+        width: 100%;
+        height: 42vh;
+        margin-bottom: 1vh;
+    } 
+    
+    .blogCard h5{
+        margin-top: 12vh;
+        height: 30%;
+        padding: 20px;
+        font-size: 18px;
+        align-self: center;
+    }
+    
+    .blogCard .desc{
+        width: 100%;
+        line-height: 15px;
+    }
+
+    .section-contact{
+        height: 130vh;
+    }
+
+    .section-contact h2{
+        font-size: 60px;
+        margin-bottom: 3vh;
+    }
+    
+    .contact-container .row{
+        margin-top: 5vh;
+    }
+
+    .contact-container p{
+        width: 50vw;
+        text-align: center;
+    }
+    .contact-container .input-field{
+        width: 90vw;
+    }
+    .contact-container .form .input{
+        width: 90vw;
+    }
+    
+    .contact-container .form textarea{
+        height: 30vh;
+    }
+    
+    .contact-container .info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-container .piece{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-container .piece p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .footer-copy{
+        height: inherit;
+        padding: 10px 0;
+    }
+    .copy-container{
+        height: inherit;
+        flex-direction: column;
+    }
 }

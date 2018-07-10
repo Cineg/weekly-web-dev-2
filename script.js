@@ -31,3 +31,14 @@ for (let i= 0; i < inputContainers.length; i++) {
         inputActive.classList.remove('visible');
     })
 }
+
+
+
+/* BURGER MENU */
+const burger = document.getElementById('burger');
+const navitems = document.getElementById('nav-items')
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navitems.classList.toggle('openNav');
+})
