@@ -42,7 +42,22 @@ nav{
     position: fixed;
     width: 100vw;
     height: 147px;
+    transition: 1s;
 }
+.scrolled{
+    transition: 1s;
+    height: 60px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    background-color: rgba(249, 248, 251, 0.5);
+    z-index: 5;
+}
+
+.scrolled:hover{
+    background-color: #f9f8fb;
+}
+
 .nav-container{
     height: inherit;
     display: flex;
@@ -61,6 +76,22 @@ nav{
     display: flex;
     justify-content: space-evenly;
 }
+.nav-items li ::before{
+    content: '';
+    position: relative;
+    width: 0%;
+    height: 3px;
+    display: block;
+    margin-bottom: 2px;
+    transition: 0.3s;
+}
+
+
+.nav-items li:hover ::before{
+    background: #ff6033;
+    width: 100%;
+}
+
 
 header{
     padding-top: 147px;
@@ -106,12 +137,22 @@ header p{
     height: 40px;
     position: absolute;
     background-repeat: no-repeat;
-    top: 80%;
+    top: 78%;
     right: 50%;
     background-position: center;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 2;
 }
 
-
+@keyframes scroll{
+    0%{top: 78%;}
+    30%{top: 78%;}
+    70%{top: 82%;}
+    100%{top: 82%;}
+}
 
 .section-about{
     background: #00b1b1;
@@ -447,30 +488,33 @@ header p{
     width: 500px;
     height: 50px;
     margin-bottom: 15px;
+    display: flex;
 }
-.contact-container .input-field::before{
-    content: '';
-    display: none;
-    position: relative;
-    width: 5px;
-    height: 50px;
-    background-color: #355b82;
-    top: 50px;
-}
-
 .contact-container .form input{
     background-color: rgba(0, 196, 196, 0.3);
     border: 0;
     width: 500px;
     height: 50px;
     padding-left: 20px;
-    transition: 1s;
+    transition: 1s background;
 }
 
 .contact-container .form input:focus{
     background-color: rgb(0, 196, 196);
     outline: 0;
     font-weight: 700;
+}
+.active{
+    width: 5px;
+    height: 100%;
+    display:flex;
+    position:relative;
+    left: 5px;
+    transition: 1s;
+}
+.visible{
+    background: #355b82;
+    transition: 1s;
 }
 
 .contact-container .form input::placeholder{
@@ -485,8 +529,13 @@ header p{
     padding-left: 20px;
     color: white;
     font-family: 'Raleway', sans-serif;
+    transition: 1s background;
 }
-
+.contact-container .form textarea:focus{
+    outline: 0;
+    font-weight: 700;
+    background-color: rgb(0, 196, 196);
+}
 
 .contact-container .info{
     display: flex;

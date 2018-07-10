@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <nav id="navigation">
         <div class="container nav-container">
             <h1 class="nav-brand"> Cahee </h1>
             <ul class="nav-items">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -125,16 +125,20 @@
                     <div class="form">
                         <form action="">
                             <div class="input-field">
-                                <input type="text" placeholder="Auskteez Tran">
+                                <div class="active"></div>
+                                <input type="text" placeholder="Auskteez Tran" class="input">
                             </div>
                             <div class="input-field">
-                                <input type="text" placeholder="Your email...">
+                                <div class="active"></div>
+                                <input type="text" placeholder="Your email..." class="input">
                             </div>
                             <div class="input-field">
-                                <input type="text" placeholder="Your phone number...">
+                                <div class="active"></div>
+                                <input type="text" placeholder="Your phone number..." class="input">
                             </div>
                             <div class="input-field">
-                                <textarea>Your message...</textarea>
+                                <div class="active"></div>
+                                <textarea class="input">Your message...</textarea>
                             </div>
                         </form>
                     </div>
@@ -164,5 +168,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
