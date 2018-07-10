@@ -154,6 +154,8 @@ header p{
     100%{top: 82%;}
 }
 
+
+
 .section-about{
     background: #00b1b1;
     height: 700px;
@@ -196,8 +198,6 @@ header p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .services-container h2{
@@ -577,6 +577,191 @@ header p{
     font-weight: 700;
     color: #ff2b58;
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 100vw;
+    }
+    header{
+        padding-top: 147px;
+        height: 100vh;
+        background: #f9f8fb url('imgs/headerbg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    
+    header p{
+        width: 50vw;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    @keyframes scroll{
+        0%{top: 90%;}
+        30%{top: 90%;}
+        70%{top: 93%;}
+        100%{top: 93%;}
+    }
+
+    .section-about{
+        background: #00b1b1;
+        height: 100vh;
+    }
+
+    .about-container{
+        height: inherit;
+        background: url('/imgs/aboutbg.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .about-container .text{
+        padding-bottom: 10vh;
+        width: 90%;
+        text-align: center;
+    }
+
+    .section-services{
+        background-color: #70bfff;
+        height: 100vh;
+        max-height: 120vh;
+    }
+    
+    .services-container{
+        height: inherit;
+        background: url('/imgs/servicesbg.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .section-gallery{
+        background-color: #ffe92f;
+        height: 110vh;
+    }
+    
+    .gallery-container{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pic-1{
+        width: 60vw;
+        height: 30vh;
+    }
+    .pic-4{
+        height: 25vh;
+    }
+
+    .section-subscribe{
+        height: 50vh;
+    }
+    
+    .subscribe-container{
+        padding: 5vw;
+    }
+    .subscribe-container p{
+        width: 70vw;
+        margin-bottom: 30px;
+    }
+    .subscribe-container input{
+        width: 60vw;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+
+    .section-blog{
+        height: 100vh;
+    }
+
+    .blog-container p{
+        width: 60vw;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .blog-container .row{
+        justify-content: space-evenly;
+        width: 90vw;
+        margin-bottom: 30px;
+    }
+    .blogCard{
+        width: 28vw;
+        height: 40vh;
+    } 
+    
+    .blogCard h5{
+        margin-top: 12vh;
+        height: 30%;
+        padding: 20px;
+        font-size: 18px;
+        align-self: center;
+    }
+    
+    .blogCard .desc{
+        width: 100%;
+        line-height: 15px;
+    }
+
+    .section-contact{
+        height: 120vh;
+    }
+    
+    .contact-container .row{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .contact-container h2{
+        font-weight: 700;
+        font-size: 90px;
+    }
+    
+    .contact-container p{
+        width: 50vw;
+        text-align: center;
+    }
+    .contact-container .input-field{
+        width: 60vw;
+    }
+    .contact-container .form .input{
+        width: 60vw;
+    }
+    
+    .contact-container .form textarea:focus{
+        outline: 0;
+        font-weight: 700;
+        background-color: rgb(0, 196, 196);
+    }
+    
+    .contact-container .info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-container .piece{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-container .piece p{
+        text-align: center;
+    }
 
 }
