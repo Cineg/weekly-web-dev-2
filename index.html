@@ -64,7 +64,7 @@
     <section id="gallery" class="section-gallery">
         <div class="container gallery-container">
             <h2>Gallery</h2>
-            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="galleryDesc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="pictures-grid">
                 <div class="pic pic-1"></div>
                 <div class="pic pic-2"></div>
@@ -76,7 +76,7 @@
         </div>
     </section>
     <section id="subscribe" class="section-subscribe">
-        <div class="container">
+        <div class="container subscribe-container">
             <h3>Subscribe To Us</h3>
             <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <div class="row">
@@ -86,24 +86,30 @@
         </div>
     </section>
     <section id="blog" class="section-blog">
-        <div class="container">
+        <div class="container blog-container">
             <h2>Blog</h2>
             <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             <div class="row">
-                <div class="blogCard">
-                    <div class="date">20 NOV</div>
-                    <h5>Green Smoothies: Too Much of a Good Thing?</h5>
-                    <p class="desc">By Auskiewitz <span>2 hours ago</span></p>
+                <div class="blogCard blog-1">
+                    <div class="gradient">
+                        <div class="date">20 NOV</div>
+                        <h5>Green Smoothies: Too Much of a Good Thing?</h5>
+                        <p class="desc">By Auskteez - 2 hours ago</p>
+                    </div>
                 </div>
-                <div class="blogCard">
-                    <div class="date">20 NOV</div>
-                    <h5>Green Smoothies: Too Much of a Good Thing?</h5>
-                    <p class="desc">By Auskiewitz <span>2 hours ago</span></p>
-                </div>
-                <div class="blogCard">
-                    <div class="date">20 NOV</div>
-                    <h5>Green Smoothies: Too Much of a Good Thing?</h5>
-                    <p class="desc">By Auskiewitz <span>2 hours ago</span></p>
+                <div class="blogCard blog-2">
+                    <div class="gradient">
+                        <div class="date">14 NOV</div>
+                        <h5>Growing Food and a "Thirst" for Innovation</h5>
+                        <p class="desc">By Auskteez - 3 hours ago</p>
+                    </div>
+                 </div>
+                <div class="blogCard blog-3">
+                    <div class="gradient">
+                        <div class="date">10 NOV</div>
+                        <h5>Pesticides & Food: What You Need to Know</h5>
+                        <p class="desc">By Auskteez - 6 hours ago</p>
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn btn-blog">View More</a>
@@ -111,17 +117,28 @@
     </section>
     <footer>
         <section id="contact" class="section-contact">
-            <div class="container">
+            <div class="container contact-container">
                 <h2>Contact</h2>
                 <p>For new projects, ideas, business or anything
                         you'd like to discuss, contact with me!</p>
                 <div class="row">
-                    <form action="">
-                        <input type="text" placeholder="Auskteez Tran">
-                        <input type="text" placeholder="Your email...">
-                        <input type="text" placeholder="Your phone number...">
-                        <textarea>Your message...</textarea>
-                    </form>
+                    <div class="form">
+                        <form action="">
+                            <div class="input-field">
+                                <input type="text" placeholder="Auskteez Tran">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Your email...">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Your phone number...">
+                            </div>
+                            <div class="input-field">
+                                <textarea>Your message...</textarea>
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="info">
                         <div class="piece">
                             <h6>Address</h6>
@@ -140,12 +157,10 @@
             </div>
         </section>
         <section id="copy" class="footer-copy">
-            <div class="container">
-                <div class="row">
-                    <p>&copy; 2015 Company. All right reserved</p>
-                    <p class="logotype"> Cahee </p>
-                    <p>Made with <span>love</span> by Auskteez</p>
-                </div>
+            <div class="container copy-container">
+                <p>&copy; 2015 Company. All right reserved</p>
+                <p class="logotype"> Cahee </p>
+                <p>Made with <span>love</span> by Auskteez</p>
             </div>
         </section>
     </footer>
